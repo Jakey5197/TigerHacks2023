@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Movie Reccomendations" Height="450" Width="800">
     <Grid Background="#FFF1B82D">
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="531,42,45,24" Background="White"/>
+        <ListBox x:Name="ReccomendationList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="531,42,45,24" Background="White"/>
         <Label x:Name="ReccLabel" Content="Reccomendations:" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Width="224" Height="32" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="GenreLabel" Content="Genres:" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <CheckBox x:Name="Action" Content="Action" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top" Checked="Comedy_Checked"/>
+        <CheckBox x:Name="Action" Content="Action" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="Adventure" Content="Adventure" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="Animation" Content="Animation" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="Comedy" Content="Comedy" HorizontalAlignment="Left" Margin="22,111,0,0" VerticalAlignment="Top"/>

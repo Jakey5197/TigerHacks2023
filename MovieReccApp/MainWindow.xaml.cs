@@ -61,6 +61,7 @@ namespace MovieReccApp
                 if(genre.IsChecked == true)
                 {
                     selections.Add(genre.Name);
+
                 }
                 //Update Wire genre info
                 if(Wire.setGenres(selections) == -1) //check for errors
