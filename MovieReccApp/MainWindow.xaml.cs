@@ -24,6 +24,7 @@ namespace MovieReccApp
     public partial class MainWindow : Window
     {
         public DataComms Wire = new DataComms(); //line used for communicating with api and database
+        public ArrayList results = new ArrayList();
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace MovieReccApp
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             ReccomendationList.Items.Clear();
+            MovieDescription.Clear();
             //Compiling Check Boxes
             CheckBox[] genres = new CheckBox[19];
             genres[0] = this.Action;
@@ -71,7 +73,6 @@ namespace MovieReccApp
                 }
             }
 
-            ArrayList results = new ArrayList();
             Wire.GetRecsFromDatabase(); //request data from database
             results = Wire.getMovieResults();
             url.Content = Wire.LINK;
@@ -84,6 +85,20 @@ namespace MovieReccApp
                 if (i == 15) break; 
             }
             
+        }
+
+        private void ReccomendationList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MovieDescription.Clear();
+            ListBox box = sender as ListBox;
+            foreach(Movie movie in results)
+            {
+                if(String.Equals(movie.Title, box.SelectedItem.ToString()))
+                {
+                    MovieDescription.Text = movie.Overview.ToString();
+                    break;
+                }
+            }
         }
     }
 }

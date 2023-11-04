@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Movie Reccomendations" Height="450" Width="800">
     <Grid Background="#FFF1B82D">
-        <ListBox x:Name="ReccomendationList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="531,36,45,114" Background="White"/>
-        <Label x:Name="ReccLabel" Content="Reccomendations:" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Width="224" Height="32" FontWeight="Bold" FontSize="16"/>
+        <ListBox x:Name="ReccomendationList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="288,46,288,104" Background="White" SelectionChanged="ReccomendationList_SelectionChanged"/>
+        <Label x:Name="ReccLabel" Content="Reccomendations:" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="224" Height="32" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="GenreLabel" Content="Genres:" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <CheckBox x:Name="Action" Content="Action" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="Adventure" Content="Adventure" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top"/>
@@ -31,5 +31,7 @@
         <CheckBox x:Name="War" Content="War" HorizontalAlignment="Left" Margin="165,213,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="Western" Content="Western" HorizontalAlignment="Left" Margin="22,233,0,0" VerticalAlignment="Top"/>
         <Label x:Name="url" Content="Label" HorizontalAlignment="Center" Margin="0,377,0,0" VerticalAlignment="Top" Width="780" FontSize="8"/>
+        <Label x:Name="MovieDescLabel" Content="Movie Description" HorizontalAlignment="Left" Margin="527,20,0,0" VerticalAlignment="Top" Width="224" Height="32" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="MovieDescription" HorizontalAlignment="Left" Margin="534,46,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="217" Height="284"/>
     </Grid>
 </Window>

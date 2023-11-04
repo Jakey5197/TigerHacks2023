@@ -80,7 +80,8 @@ namespace MovieReccApp
             while (recList.Count != 10)
             {
                 //Setting up url for accessing API
-                string front = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=";
+                string https = "https://";
+                string front = "api.themoviedb.org/3/discover/movie?include__adult=false&include__video=false&language=en-US&page=";
                 int pagenum = 1; //page number as int
                 string page = ""; //page number string
                 string middle = "&sort_by=popularity.desc&with_genres=";
@@ -98,7 +99,7 @@ namespace MovieReccApp
                 }
 
                 page = pagenum.ToString(); //convert int to string
-                string link = front + page + middle + genres; //sew string together to get complete link
+                string link = https + front + page + middle + genres; //sew string together to get complete link
                 LINK = link;
                 Uri requestLink = new Uri(link, UriKind.Absolute);
 
