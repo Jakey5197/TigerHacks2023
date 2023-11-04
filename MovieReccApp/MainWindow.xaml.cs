@@ -23,7 +23,7 @@ namespace MovieReccApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public DataComms Wire; //line used for communicating with api and database
+        public DataComms Wire = new DataComms(); //line used for communicating with api and database
         public MainWindow()
         {
             InitializeComponent();
@@ -43,15 +43,21 @@ namespace MovieReccApp
             genres[7] = this.Fantasy;
 
             //Check which boxes are selected
+            ArrayList selections = new ArrayList();
             foreach (CheckBox genre in genres)
             {
-                ArrayList selections = new ArrayList();
                 //Count items 
                 if(genre.IsChecked == true)
                 {
-                    selections.Add(genre);
+                    selections.Add(genre.Name);
+                }
+                //Update Wire genre info
+                if(Wire.setGenres(selections) == -1) //check for errors
+                {
+                    //do something to fix it idk
                 }
             }
+            
         }
     }
 }
