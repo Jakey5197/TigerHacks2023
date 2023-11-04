@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MovieReccApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="Movie Reccomendations" Height="450" Width="800">
+    <Grid Background="#FFF1B82D">
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="531,42,45,24" Background="White"/>
+        <Label x:Name="ReccLabel" Content="Reccomendations:" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Width="224" Height="32" FontWeight="Bold" FontSize="16"/>
     </Grid>
 </Window>

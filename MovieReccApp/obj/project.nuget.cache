@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "bKCo1MNf/6LYdm7FK4+1FYbP1e7qkYytnMxOSrl6+NmBQzTMm7a/hXjWxRjs2IvHaGuanbMNtckGXn4s12jaFw==",
+  "dgSpecHash": "znofTzpDtOM/LOFrZf8swF4zg7hpgdBY1WF1tKV7xPEmWo9ByVFxZvRWYXZlfQaoF7LqEOYtmHSFqKVbiXihEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\MovieReccApp\\MovieReccApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\TigerHacks2023\\MovieReccApp\\MovieReccApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jacob\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\jacob\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\jacob\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\jacob\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

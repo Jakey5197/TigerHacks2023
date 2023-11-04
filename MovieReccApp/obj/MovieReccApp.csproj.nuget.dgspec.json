@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\MovieReccApp\\MovieReccApp.csproj": {}
+    "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\TigerHacks2023\\MovieReccApp\\MovieReccApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\MovieReccApp\\MovieReccApp.csproj": {
+    "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\TigerHacks2023\\MovieReccApp\\MovieReccApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\MovieReccApp\\MovieReccApp.csproj",
+        "projectUniqueName": "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\TigerHacks2023\\MovieReccApp\\MovieReccApp.csproj",
         "projectName": "MovieReccApp",
-        "projectPath": "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\MovieReccApp\\MovieReccApp.csproj",
+        "projectPath": "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\TigerHacks2023\\MovieReccApp\\MovieReccApp.csproj",
         "packagesPath": "C:\\Users\\jacob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\MovieReccApp\\obj\\",
+        "outputPath": "C:\\Users\\jacob\\OneDrive - University of Missouri\\Year 5\\TigerHacks23\\TigerHacks2023\\MovieReccApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
