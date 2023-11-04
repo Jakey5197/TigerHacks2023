@@ -32,15 +32,26 @@ namespace MovieReccApp
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             //Compiling Check Boxes
-            CheckBox[] genres = new CheckBox[8];
-            genres[0] = this.Comedy;
-            genres[1] = this.Romance;
-            genres[2] = this.Horror;
-            genres[3] = this.Action;
-            genres[4] = this.Scifi;
-            genres[5] = this.Mystery;
-            genres[6] = this.Kids;
-            genres[7] = this.Fantasy;
+            CheckBox[] genres = new CheckBox[19];
+            genres[0] = this.Action;
+            genres[1] = this.Adventure;
+            genres[2] = this.Animation;
+            genres[3] = this.Comedy;
+            genres[4] = this.Crime;
+            genres[5] = this.Documentary;
+            genres[6] = this.Drama;
+            genres[7] = this.Family;
+            genres[8] = this.Fantasy;
+            genres[9] = this.History;
+            genres[10] = this.Horror;
+            genres[11] = this.Music;
+            genres[12] = this.Mystery;
+            genres[13] = this.Romance;
+            genres[14] = this.ScienceFiction;
+            genres[15] = this.TVMovie;
+            genres[16] = this.Thriller;
+            genres[17] = this.War;
+            genres[18] = this.Western;
 
             //Check which boxes are selected
             ArrayList selections = new ArrayList();

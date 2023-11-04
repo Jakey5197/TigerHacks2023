@@ -35,6 +35,7 @@ namespace MovieReccApp
         }
         //Class variables
         public Object[] Genres; //array to store genres currently used
+        public int number; 
 
         //Consrtuctors
         public DataComms()
@@ -42,7 +43,7 @@ namespace MovieReccApp
             Genres = null;
         }
 
-        //grabs genres from mainWindow
+        //grabs genres from mainWindow and sets it in class
         //returns -1 on error
         //returns 1 on success
         public int setGenres(ArrayList genres)
@@ -56,9 +57,16 @@ namespace MovieReccApp
             return 1;
         }
 
+        //get Genres
         public Object getGenres()
         {
             return Genres;
         }
+
+        //sends request to API to search for movies with the requested genres
+        /*public Object getRecs()
+        {
+            
+        }*/
     }
 }
