@@ -10,14 +10,15 @@
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="531,42,45,24" Background="White"/>
         <Label x:Name="ReccLabel" Content="Reccomendations:" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Width="224" Height="32" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="GenreLabel" Content="Genres:" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <CheckBox Content="Genre" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Genre" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Genre" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Genre" HorizontalAlignment="Left" Margin="22,111,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Genre" HorizontalAlignment="Left" Margin="165,51,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Genre" HorizontalAlignment="Left" Margin="165,71,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Genre" HorizontalAlignment="Left" Margin="165,91,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Genre" HorizontalAlignment="Left" Margin="165,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Comedy" Content="Comedy" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Romance" Content="Romance" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Horror" Content="Horror" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Action" Content="Action" HorizontalAlignment="Left" Margin="22,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Scifi" Content="Sci-Fi" HorizontalAlignment="Left" Margin="165,51,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Mystery" Content="Mystery" HorizontalAlignment="Left" Margin="165,71,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Kids" Content="Kids" HorizontalAlignment="Left" Margin="165,91,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Fantasy" Content="Fantasy" HorizontalAlignment="Left" Margin="165,111,0,0" VerticalAlignment="Top"/>
         <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Margin="22,151,0,0" VerticalAlignment="Top" Width="101" Background="#FFF1B82D" Click="SearchButton_Click"/>
+        <Label x:Name="tester" Content="NULL" HorizontalAlignment="Left" Margin="123,195,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
