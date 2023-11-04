@@ -10,25 +10,25 @@
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="531,42,45,24" Background="White"/>
         <Label x:Name="ReccLabel" Content="Reccomendations:" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Width="224" Height="32" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="GenreLabel" Content="Genres:" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <CheckBox x:Name="Comedy" Content="Comedy" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Romance" Content="Romance" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Horror" Content="Horror" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Action" Content="Action" HorizontalAlignment="Left" Margin="22,111,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Scifi" Content="Sci-Fi" HorizontalAlignment="Left" Margin="165,51,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Mystery" Content="Mystery" HorizontalAlignment="Left" Margin="165,71,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Kids" Content="Kids" HorizontalAlignment="Left" Margin="165,91,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Fantasy" Content="Fantasy" HorizontalAlignment="Left" Margin="165,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Action" Content="Action" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Adventure" Content="Adventure" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Animation" Content="Animation" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Comedy" Content="Comedy" HorizontalAlignment="Left" Margin="22,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Crime" Content="Crime" HorizontalAlignment="Left" Margin="165,51,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Documentary" Content="Documentary" HorizontalAlignment="Left" Margin="165,71,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Drama" Content="Drama" HorizontalAlignment="Left" Margin="165,91,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Family" Content="Family" HorizontalAlignment="Left" Margin="165,111,0,0" VerticalAlignment="Top"/>
         <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Margin="22,294,0,0" VerticalAlignment="Top" Width="101" Background="#FFF1B82D" Click="SearchButton_Click"/>
-        <CheckBox x:Name="Comedy_Copy" Content="Comedy" HorizontalAlignment="Left" Margin="22,133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Romance_Copy" Content="Romance" HorizontalAlignment="Left" Margin="22,153,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Horror_Copy" Content="Horror" HorizontalAlignment="Left" Margin="22,173,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Action_Copy" Content="Action" HorizontalAlignment="Left" Margin="22,193,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Scifi_Copy" Content="Sci-Fi" HorizontalAlignment="Left" Margin="165,133,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Mystery_Copy" Content="Mystery" HorizontalAlignment="Left" Margin="165,153,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Kids_Copy" Content="Kids" HorizontalAlignment="Left" Margin="165,173,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Fantasy_Copy" Content="Fantasy" HorizontalAlignment="Left" Margin="165,193,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Action_Copy1" Content="Action" HorizontalAlignment="Left" Margin="22,213,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Fantasy_Copy1" Content="Fantasy" HorizontalAlignment="Left" Margin="165,213,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="Action_Copy2" Content="Action" HorizontalAlignment="Left" Margin="22,233,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Fantasy" Content="Fantasy" HorizontalAlignment="Left" Margin="22,133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="History" Content="History" HorizontalAlignment="Left" Margin="22,153,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Horror" Content="Horror" HorizontalAlignment="Left" Margin="22,173,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Music" Content="Music" HorizontalAlignment="Left" Margin="22,193,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Mystery" Content="Mystery" HorizontalAlignment="Left" Margin="165,133,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Romance" Content="Romance" HorizontalAlignment="Left" Margin="165,153,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ScienceFiction" Content="ScienceFiction" HorizontalAlignment="Left" Margin="165,173,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="TVMovie" Content="TVMovie" HorizontalAlignment="Left" Margin="165,193,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Thriller" Content="Thriller" HorizontalAlignment="Left" Margin="22,213,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="War" Content="War" HorizontalAlignment="Left" Margin="165,213,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Western" Content="Western" HorizontalAlignment="Left" Margin="22,233,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
