@@ -74,6 +74,7 @@ namespace MovieReccApp
             ArrayList results = new ArrayList();
             Wire.GetRecsFromDatabase(); //request data from database
             results = Wire.getMovieResults();
+            url.Content = Wire.LINK;
 
             int i = 0;
             foreach(Movie movie in results)

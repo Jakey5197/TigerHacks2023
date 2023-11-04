@@ -17,7 +17,7 @@ namespace MovieReccApp
         //dictionary for converting 
         IDictionary<string, int> MovieID = new Dictionary<string, int>();
         //Class variables
-        public Object[] Genres; //array to store genres currently used
+        public ArrayList Genres; //array to store genres currently used
         public ArrayList recList; //array to store movie rec list
         public MovieResult MovieResult;
         public string LINK;
@@ -25,7 +25,7 @@ namespace MovieReccApp
         //Consrtuctors
         public DataComms()
         {
-            Genres = null;
+            Genres = new ArrayList();
             recList = new ArrayList();
             MovieResult = new MovieResult();
             MovieID.Add("Action", 28);
@@ -59,7 +59,7 @@ namespace MovieReccApp
                 return -1;
 
             //Convert the array list to an array and store in Class variable
-            Genres = genres.ToArray();
+            Genres = genres;
             return 1;
         }
 
@@ -83,9 +83,19 @@ namespace MovieReccApp
                 string front = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=";
                 int pagenum = 1; //page number as int
                 string page = ""; //page number string
-                string middle = "&sort_by=popularity.desc&";
+                string middle = "&sort_by=popularity.desc&with_genres=";
                 string genres = "";//list of genre ids in format #%2C for "and" #%7C for "or"
                 //convert name to id
+                int genreCount = Genres.Count; //get genre count
+                foreach(String genre in Genres)
+                {
+                    genres += MovieID[genre].ToString(); //adds string
+                    if(genreCount > 1)
+                    {
+                        genres += "%2C";
+                    }
+                    genreCount--;
+                }
 
                 page = pagenum.ToString(); //convert int to string
                 string link = front + page + middle + genres; //sew string together to get complete link

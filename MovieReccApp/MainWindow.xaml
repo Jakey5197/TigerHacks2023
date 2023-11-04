@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Movie Reccomendations" Height="450" Width="800">
     <Grid Background="#FFF1B82D">
-        <ListBox x:Name="ReccomendationList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="531,42,45,24" Background="White"/>
+        <ListBox x:Name="ReccomendationList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="531,36,45,114" Background="White"/>
         <Label x:Name="ReccLabel" Content="Reccomendations:" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Width="224" Height="32" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="GenreLabel" Content="Genres:" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <CheckBox x:Name="Action" Content="Action" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
@@ -30,6 +30,6 @@
         <CheckBox x:Name="Thriller" Content="Thriller" HorizontalAlignment="Left" Margin="22,213,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="War" Content="War" HorizontalAlignment="Left" Margin="165,213,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="Western" Content="Western" HorizontalAlignment="Left" Margin="22,233,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="url" Content="Label" HorizontalAlignment="Left" Margin="10,348,0,0" VerticalAlignment="Top" Width="521"/>
+        <Label x:Name="url" Content="Label" HorizontalAlignment="Center" Margin="0,377,0,0" VerticalAlignment="Top" Width="780" FontSize="8"/>
     </Grid>
 </Window>
