@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections;
 
 namespace MovieReccApp
 {
@@ -22,6 +23,7 @@ namespace MovieReccApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        public DataComms Wire; //line used for communicating with api and database
         public MainWindow()
         {
             InitializeComponent();
@@ -43,10 +45,11 @@ namespace MovieReccApp
             //Check which boxes are selected
             foreach (CheckBox genre in genres)
             {
-                //If checkbox is checked...
+                ArrayList selections = new ArrayList();
+                //Count items 
                 if(genre.IsChecked == true)
                 {
-
+                    selections.Add(genre);
                 }
             }
         }
