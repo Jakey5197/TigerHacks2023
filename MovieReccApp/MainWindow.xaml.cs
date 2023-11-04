@@ -31,6 +31,7 @@ namespace MovieReccApp
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
+            ReccomendationList.Items.Clear();
             //Compiling Check Boxes
             CheckBox[] genres = new CheckBox[19];
             genres[0] = this.Action;
@@ -61,7 +62,6 @@ namespace MovieReccApp
                 if(genre.IsChecked == true)
                 {
                     selections.Add(genre.Name);
-
                 }
                 //Update Wire genre info
                 if(Wire.setGenres(selections) == -1) //check for errors
