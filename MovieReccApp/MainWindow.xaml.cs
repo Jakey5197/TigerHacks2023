@@ -27,6 +27,7 @@ namespace MovieReccApp
         public MainWindow()
         {
             InitializeComponent();
+            Wire.GetRecsFromDatabase();
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)

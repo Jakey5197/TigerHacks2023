@@ -1,46 +1,29 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using RestSharp;
 
 namespace MovieReccApp
 {
     public class DataComms
     {
-        //Enum for converting 
-        public enum MovieGenre
-        {
-            Action = 28,
-            Adventure = 12,
-            Animation = 16,
-            Comedy = 35,
-            Crime = 80,
-            Documentary = 99,
-            Drama = 18,
-            Family = 10751,
-            Fantasy = 14,
-            History = 36,
-            Horror = 27,
-            Music = 10402,
-            Mystery = 9648,
-            Romance = 10749,
-            ScienceFiction = 878,
-            TVMovie = 10770,
-            Thriller = 53,
-            War = 10752,
-            Western = 37
-        }
+        //dictionary for converting 
+        IDictionary<string, int> MovieID = new Dictionary<string, int>();
         //Class variables
         public Object[] Genres; //array to store genres currently used
-        public int number; 
+        public ArrayList recList; //array to store movie rec list
+        public MovieResult MovieResult; 
 
         //Consrtuctors
         public DataComms()
         {
             Genres = null;
+
         }
 
         //grabs genres from mainWindow and sets it in class
@@ -63,10 +46,28 @@ namespace MovieReccApp
             return Genres;
         }
 
-        //sends request to API to search for movies with the requested genres
-        /*public Object getRecs()
+        public ArrayList getMovieResults()
         {
-            
-        }*/
+            return recList;
+        }
+
+        //sends request to API to search for movies with the requested genres
+        public async void GetRecsFromDatabase()
+        {
+            string front = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&";
+            string genres = "";
+
+            while (recList.length != 10)
+            {
+                var options = new RestClientOptions("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=18");
+                var client = new RestClient(options);
+                var request = new RestRequest("");
+                request.AddHeader("accept", "application/json");
+                request.AddHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NDIyNDg3MjhiYjNmMWRjMWQ5MGVmOGVkNWU3YTExNSIsInN1YiI6IjY1NDY2YWI1MWFjMjkyN2IzMzg3MDZlMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dITRGCQRBupaOk03PcyVXX2mBxWMLdu43KMfZa_xWfk");
+                var response = await client.GetAsync(request);
+            }
+
+            return;
+        }   
     }
 }
