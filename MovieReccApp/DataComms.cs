@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using Newtonsoft.Json;
 using RestSharp;
 
 namespace MovieReccApp
@@ -17,12 +19,15 @@ namespace MovieReccApp
         //Class variables
         public Object[] Genres; //array to store genres currently used
         public ArrayList recList; //array to store movie rec list
-        public MovieResult MovieResult; 
+        public MovieResult MovieResult;
+        public string LINK;
 
         //Consrtuctors
         public DataComms()
         {
             Genres = null;
+            recList = new ArrayList();
+            MovieResult = new MovieResult();
 
         }
 
@@ -54,19 +59,40 @@ namespace MovieReccApp
         //sends request to API to search for movies with the requested genres
         public async void GetRecsFromDatabase()
         {
-            string front = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&";
-            string genres = "";
-
-            while (recList.length != 10)
+            while (recList.Count != 10)
             {
-                var options = new RestClientOptions("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=18");
+                //Setting up url for accessing API
+                string front = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=";
+                int pagenum = 1; //page number as int
+                string page = ""; //page number string
+                string middle = "&sort_by=popularity.desc&";
+                string genres = "";//list of genre ids in format #%2C for "and" #%7C for "or"
+                //convert name to id
+
+                page = pagenum.ToString(); //convert int to string
+                string link = front + page + middle + genres; //sew string together to get complete link
+                LINK = link;
+                Uri requestLink = new Uri(link, UriKind.Absolute);
+
+                //making request to database
+                var options = new RestClientOptions(requestLink);
                 var client = new RestClient(options);
                 var request = new RestRequest("");
                 request.AddHeader("accept", "application/json");
                 request.AddHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NDIyNDg3MjhiYjNmMWRjMWQ5MGVmOGVkNWU3YTExNSIsInN1YiI6IjY1NDY2YWI1MWFjMjkyN2IzMzg3MDZlMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dITRGCQRBupaOk03PcyVXX2mBxWMLdu43KMfZa_xWfk");
                 var response = await client.GetAsync(request);
-            }
+                MovieResult movieResult = JsonConvert.DeserializeObject<MovieResult>(response.Content);
+                if (response.IsSuccessStatusCode == false) break; //check if at end of
 
+                //putting results into movie list
+                int i = 0; //counter
+                foreach (Movie movie in movieResult.Results)
+                {
+                    recList.Add(movie); //add movie into results
+                    if (i < 15) i++; else break; //grab at most 15 results
+                }
+                pagenum++;
+            }
             return;
         }   
     }

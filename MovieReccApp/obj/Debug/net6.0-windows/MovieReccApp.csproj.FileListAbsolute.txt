@@ -32,3 +32,4 @@ C:\Users\MobyD\OneDrive\Documents\GitHub\TigerHacks2023\MovieReccApp\obj\Debug\n
 C:\Users\MobyD\OneDrive\Documents\GitHub\TigerHacks2023\MovieReccApp\obj\Debug\net6.0-windows\MovieReccApp.dll
 C:\Users\MobyD\OneDrive\Documents\GitHub\TigerHacks2023\MovieReccApp\obj\Debug\net6.0-windows\refint\MovieReccApp.dll
 C:\Users\MobyD\OneDrive\Documents\GitHub\TigerHacks2023\MovieReccApp\obj\Debug\net6.0-windows\MovieReccApp.pdb
+C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll

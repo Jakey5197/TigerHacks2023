@@ -70,6 +70,18 @@ namespace MovieReccApp
                     //do something to fix it idk
                 }
             }
+
+            ArrayList results = new ArrayList();
+            Wire.GetRecsFromDatabase(); //request data from database
+            results = Wire.getMovieResults();
+
+            int i = 0;
+            foreach(Movie movie in results)
+            {
+                ReccomendationList.Items.Add(movie.Title);
+                i++;
+                if (i == 15) break; 
+            }
             
         }
     }
