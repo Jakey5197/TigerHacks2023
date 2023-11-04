@@ -18,3 +18,9 @@ C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2
 C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\obj\Debug\net6.0-windows\MovieReccApp.pdb
 C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\obj\Debug\net6.0-windows\MovieReccApp.genruntimeconfig.cache
 C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\obj\Debug\net6.0-windows\ref\MovieReccApp.dll
+C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\bin\Debug\net6.0-windows\RestSharp.dll
+C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\obj\Debug\net6.0-windows\MovieReccApp.csproj.AssemblyReference.cache
+C:\Users\jacob\OneDrive - University of Missouri\Year 5\TigerHacks23\TigerHacks2023\MovieReccApp\obj\Debug\net6.0-windows\MovieReccApp.csproj.CopyComplete
