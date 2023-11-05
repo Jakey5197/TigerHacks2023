@@ -28,7 +28,25 @@ namespace MovieReccApp
             Genres = null;
             recList = new ArrayList();
             MovieResult = new MovieResult();
-
+            MovieID.Add("Action", 28);
+            MovieID.Add("Adventure", 12);
+            MovieID.Add("Animation", 16);
+            MovieID.Add("Comedy", 35);
+            MovieID.Add("Crime", 80);
+            MovieID.Add("Documentary", 99);
+            MovieID.Add("Drama", 18);
+            MovieID.Add("Family", 10751);
+            MovieID.Add("Fantasy", 14);
+            MovieID.Add("History", 36);
+            MovieID.Add("Horror", 27);
+            MovieID.Add("Music", 10402);
+            MovieID.Add("Mystery", 9648);
+            MovieID.Add("Romance", 10749);
+            MovieID.Add("ScienceFiction", 878);
+            MovieID.Add("TVMovie", 10770);
+            MovieID.Add("Thriller", 53);
+            MovieID.Add("War", 10752);
+            MovieID.Add("Western", 37);
         }
 
         //grabs genres from mainWindow and sets it in class
